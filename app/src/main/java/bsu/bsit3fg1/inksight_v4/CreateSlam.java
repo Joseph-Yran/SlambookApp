@@ -6,6 +6,7 @@ import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageButton;
@@ -16,6 +17,8 @@ public class CreateSlam extends AppCompatActivity {
 
     ImageButton home, back, settings;
     EditText bdayinp;
+
+    Button save, discard;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +50,20 @@ public class CreateSlam extends AppCompatActivity {
             public void onClick(View v) {
                 Intent nextScreen = new Intent(getApplicationContext(), Settings.class);
                 startActivity(nextScreen);
+            }
+        });
+
+        save.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //function ni save goes here
+            }
+        });
+
+        discard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //function ni discard goes here
             }
         });
 

@@ -14,12 +14,28 @@ public class Archives_Prev extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_archives_prev);
         back = (ImageButton) findViewById(R.id.backbttn);
+        unarchive = (ImageButton) findViewById(R.id.unarchivebutton);
+        delete = (ImageButton) findViewById(R.id.deletebutton);
 
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 finish();
+            }
+        });
+
+        unarchive.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //function ni unarchive goes here
+            }
+        });
+
+        delete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //function ni delete archived slam goes here
             }
         });
     }
