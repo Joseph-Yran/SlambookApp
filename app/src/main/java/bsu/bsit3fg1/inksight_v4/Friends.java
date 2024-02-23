@@ -10,10 +10,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
-public class Friends extends AppCompatActivity {
+public class Friends extends AppCompatActivity implements FriendInterface{
     ImageButton home, settings, friends, addslam, archives;
     ArrayList<friend_data> slamprevdata = new ArrayList<>();
 
@@ -77,7 +78,7 @@ public class Friends extends AppCompatActivity {
         setupSlamprevdata();
 
         //this adds data from array to adapter class
-        friend_adapter adapter = new friend_adapter(this, slamprevdata);
+        friend_adapter adapter = new friend_adapter(this, slamprevdata, this);
 
         //linearlayout para vertical siya
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
@@ -94,5 +95,26 @@ public class Friends extends AppCompatActivity {
         for (int i = 0; i < friendname.length; i++) {
             slamprevdata.add(new friend_data(friendname[i]));
         }
+    }
+
+    @Override
+    public void onItemClick(int position) {
+
+    }
+
+    @Override
+    public void onEditClick(int position) {
+        Toast.makeText(Friends.this, "Editing", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void onArchiveClick(int position) {
+        Toast.makeText(Friends.this, "User's Slam Archived", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void onDeleteClick(int position) {
+        //slamprevdata.remove(position);
+        Toast.makeText(Friends.this, "User Deleted", Toast.LENGTH_SHORT).show();
     }
 }
