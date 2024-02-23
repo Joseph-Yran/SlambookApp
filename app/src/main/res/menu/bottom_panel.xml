@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/friendsbttn"
+        android:title="@string/buttonlabel_fr"
+        android:icon="@drawable/_11"
+        />
+    <item
+        android:id="@+id/addslambttn"
+        android:title=""
+        android:enabled="false"
+        />
+    <item
+        android:id="@+id/archivesbttn"
+        android:title="@string/buttonlabel_ar"
+        android:icon="@drawable/_10"
+        />
+</menu>

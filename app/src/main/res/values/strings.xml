@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">InkSight_v4</string>
+
+    <!-- LOGIN SCREEN TEXTS -->
+    <string name="screenlabel_l">LOGIN</string>
+    <string name="email_inp_label">Email</string>
+    <string name="passw_inp_label">Password</string>
+    <string name="login_button_label">SIGN IN</string>
+    <string name="forgot_pass_label">Forgot your password?</string>
+    <string name="register_label">Still don\'t have an account</string>
+    <string name="register_button_label">SIGN UP</string>
+
+    <!-- REGISTER SCREEN TEXTS -->
+    <string name="screenlabel_r">Create an Account</string>
+    <string name="usrname_inp_label">Username</string>
+    <string name="passw_conf_inp_label">Confirm Password</string>
+    <string name="Terms_Agreement"> By signing up, you accept the TERMS and CONDITIONS and PRIVACY POLICY</string>
+    <string name="login_label">Already have an account?</string>
+
+    <!-- Reset and Confirm Pass Texts-->
+    <string name="screenlabel_rp">Reset Password</string>
+    <string name="proceed_button_label">Proceed</string>
+    <string name="pssword_input_label">Enter New Password</string>
+    <string name="reset_button_label">Reset Password</string>
+
+    <!-- Home Screen, Archives and Friends-->
+    <string name="screenlabel_ho">HOME</string>
+    <string name="screenlabel_fr">FRIENDS</string>
+    <string name="screenlabel_ar">ARCHIVES</string>
+    <string name="screenlabel_as">ADD SLAM</string>
+    <string name="screenlabel_st">SETTINGS</string>
+
+    <string name="buttonlabel_ho">Home</string>
+    <string name="buttonlabel_st">Settings</string>
+    <string name="buttonlabel_fr">Friends</string>
+    <string name="buttonlabel_as">Add Slam</string>
+    <string name="buttonlabel_ar">Archive</string>
+    <string name="buttonlabel_ed">Edit</string>
+    <string name="buttonlabel_de">Delete</string>
+    <string name="buttonlabel_bk">Back</string>
+
+    <!-- Settings -->
+    <string name="changepass">Change Password</string>
+    <string name="passlabelold">Old Password</string>
+    <string name="passlabelnew">New Password</string>
+    <string name="confirmbutton">Confirm</string>
+    <string name="logoutbutton">"  Sign Out"</string>
+
+    <!--Add and preview slams-->
+    <string name="Aboutmeq0">About You</string>
+    <string name="Aboutmeq1">My Name is:</string>
+    <string name="Aboutmeq2">You can call me:</string>
+    <string name="Aboutmeq3">My Birthday is:</string>
+    <string name="Aboutmeq4">This is me:</string>
+
+    <string name="Onlinemeq0">Online Me:</string>
+    <string name="Onlinemeq1">My Instagram is:</string>
+    <string name="Onlinemeq2">My Twitter/X is:</string>
+    <string name="Onlinemeq3">My Facebook is:</string>
+    <string name="Onlinemeq4">My other handle/s:</string>
+
+
+    <string name="Favoritesq0">My Favorites:</string>
+    <string name="Favoritesq1">Food:</string>
+    <string name="Favoritesq2">Beverage:</string>
+    <string name="Favoritesq3">Animal:</string>
+    <string name="Favoritesq4">Song/s:</string>
+    <string name="Favoritesq6">Celebrity/s:</string>
+    <string name="Favoritesq5">Artist/s:</string>
+    <string name="Favoritesq7">Activity:</string>
+    <string name="Favoritesq8">Game/s:</string>
+    <string name="Favoritesq9">Show/s:</string>\
+
+    <string name="saveButton">Save</string>
+    <string name="discardButton">Discard</string>
+
+
+    <!-- Arrays -->
+    <string-array name="friend_name">
+        <item>Testname 1</item>
+    </string-array>
+
+    <string-array name="archive_data">
+        <item>Archive 1</item>
+    </string-array>
+</resources>

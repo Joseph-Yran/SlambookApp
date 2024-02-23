@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="StrawberryField">#FA7880</color>
+    <color name="SalmonUpstream">#FFA5A5</color>
+    <color name="SoftAmethyst">#D3BACA</color>
+    <color name="PromiseKeeping">#AFCAE8</color>
+    <color name="Allure">#758EB7</color>
+    <color name="SurfTheWeb">#1F417A</color>
+
+    <!--Nostalgia Color Pallete-->
+    <color name="SereneJourney">#ccd5cf</color>
+    <color name="DeliriousMonkey">#d9c6c6</color>
+    <color name="AprilWinds">#d5e0e5</color>
+    <color name="BrightChambray">#adc0c8</color>
+    <color name="PalaceArms">#44486c</color>
+</resources>

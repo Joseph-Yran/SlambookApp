@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_l"
+    tools:context=".CreateSlam">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha=".90"
+        android:clickable="false"
+        android:src="@drawable/gradient_bg" />
+
+    <LinearLayout
+        android:id="@+id/topPanel"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:orientation="horizontal"
+        android:paddingStart="20dp"
+        android:paddingTop="20dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/backbttn"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:contentDescription="BackButton"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/_14" />
+
+        <TextView
+            android:id="@+id/screenlbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/labelbackgrounds"
+            android:fontFamily="@font/poppins"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="@string/screenlabel_as"
+            android:textAlignment="center"
+            android:textColor="@color/SurfTheWeb"
+            android:textSize="25sp" />
+
+        <ImageButton
+            android:id="@+id/homebttn"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/buttonlabel_ho"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/home_1" />
+
+        <ImageButton
+            android:id="@+id/settingsbttn"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/buttonlabel_st"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/setting_1" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="SlambookQuestions"
+        android:fillViewport="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_max="640dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topPanel">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/Slambookquestions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:paddingBottom="100dp"
+            android:paddingTop="5dp">
+
+            <LinearLayout
+                android:id="@+id/slamsec1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:background="@drawable/roundedboxbg"
+                android:orientation="vertical"
+                android:paddingStart="15dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/overlapview">
+
+                <TextView
+                    android:id="@+id/abq0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="center"
+                    android:text="@string/Aboutmeq0" />
+
+                <TextView
+                    android:id="@+id/abq1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="start"
+                    android:text="@string/Aboutmeq1" />
+
+                <EditText
+                    android:id="@+id/namefield"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="start"
+                    android:hint="Full Name"
+                    android:focusable="true"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/abq2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="start"
+                    android:text="@string/Aboutmeq2" />
+
+                <EditText
+                    android:id="@+id/nickfield"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="start"
+                    android:hint="Nickname"
+                    android:focusable="true"
+                    android:inputType="text" />
+
+                <TextView
+                    android:id="@+id/abq3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="start"
+                    android:text="@string/Aboutmeq3" />
+
+                <EditText
+                    android:id="@+id/bdayfield"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:hint="Enter date" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/cattochan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="Catto-Chan"
+                android:scaleType="centerInside"
+                android:src="@drawable/cat"
+                app:layout_constraintBottom_toBottomOf="@id/overlapview"
+                app:layout_constraintEnd_toEndOf="@id/overlapview"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@id/overlapview"
+                app:layout_constraintTop_toTopOf="@id/overlapview"
+                app:layout_constraintVertical_bias="0.23" />
+
+            <Space
+                android:id="@+id/overlapview"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@id/slamsec1"
+                app:layout_constraintEnd_toEndOf="@+id/slamsec1"
+                app:layout_constraintStart_toStartOf="@+id/slamsec1"
+                app:layout_constraintTop_toTopOf="@id/slamsec1"
+                app:layout_constraintVertical_bias="1"
+                app:layout_constraintHorizontal_bias="0.7"/>
+
+            <LinearLayout
+                android:id="@+id/slamsec2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7.5dp"
+                android:layout_marginBottom="7.5dp"
+                android:background="@drawable/roundedboxbg"
+                android:orientation="vertical"
+                android:paddingStart="15dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/slamsec1">
+
+                <TextView
+                    android:id="@+id/omq0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="center"
+                    android:text="@string/Onlinemeq0" />
+
+                <TextView
+                    android:id="@+id/omq1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="start"
+                    android:text="@string/Onlinemeq1" />
+
+                <EditText
+                    android:id="@+id/ighandlefield"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="start"
+                    android:hint="Instagram"
+                    android:focusable="true"
+                    android:inputType="text" />
+
+                <TextView
+                    android:id="@+id/omq2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="start"
+                    android:text="@string/Onlinemeq2" />
+
+                <EditText
+                    android:id="@+id/Xhandlefield"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="start"
+                    android:hint="Twitter"
+                    android:focusable="true"
+                    android:inputType="text" />
+
+                <TextView
+                    android:id="@+id/omq3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="start"
+                    android:text="@string/Onlinemeq3" />
+
+                <EditText
+                    android:id="@+id/FBhandlefield"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:ems="10"
+                    android:hint="Facebook"
+                    android:focusable="true"
+                    android:inputType="text" />
+
+                <TextView
+                    android:id="@+id/omq4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="start"
+                    android:text="@string/Onlinemeq4" />
+
+                <EditText
+                    android:id="@+id/Otherhandlefield"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:ems="10"
+                    android:hint="Other sites"
+                    android:focusable="true"
+                    android:inputType="text" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/slamsec3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7.5dp"
+                android:layout_marginBottom="7.5dp"
+                android:background="@drawable/roundedboxbg"
+                android:orientation="vertical"
+                android:paddingStart="15dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/slamsec2">
+
+                <TextView
+                    android:id="@+id/fav0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="center"
+                    android:text="@string/Favoritesq0" />
+
+                <TextView
+                    android:id="@+id/fav1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="start"
+                    android:text="@string/Favoritesq1" />
+
+                <EditText
+                    android:id="@+id/foodfield"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="start"
+                    android:hint="Ice cream"
+                    android:focusable="true"
+                    android:inputType="text" />
+
+                <TextView
+                    android:id="@+id/fav2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="start"
+                    android:text="@string/Favoritesq2" />
+
+                <EditText
+                    android:id="@+id/beveragefield"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="start"
+                    android:hint="Soda"
+                    android:focusable="true"
+                    android:inputType="text" />
+
+                <TextView
+                    android:id="@+id/fav3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="start"
+                    android:text="@string/Favoritesq3" />
+
+                <EditText
+                    android:id="@+id/animalfield"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="start"
+                    android:hint="Cat"
+                    android:focusable="true"
+                    android:inputType="text" />
+
+                <TextView
+                    android:id="@+id/fav4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="start"
+                    android:text="@string/Favoritesq4" />
+
+                <EditText
+                    android:id="@+id/Songfield"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="start"
+                    android:hint="Haru"
+                    android:focusable="true"
+                    android:inputType="text" />
+
+                <TextView
+                    android:id="@+id/fav5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="start"
+                    android:text="@string/Favoritesq5" />
+
+                <EditText
+                    android:id="@+id/Artistfield"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="start"
+                    android:hint="Yorushika"
+                    android:focusable="true"
+                    android:inputType="text" />
+
+                <TextView
+                    android:id="@+id/fav6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="start"
+                    android:text="@string/Favoritesq6" />
+
+                <EditText
+                    android:id="@+id/Celebfield"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="start"
+                    android:hint="Maja Salvador"
+                    android:focusable="true"
+                    android:inputType="text" />
+
+                <TextView
+                    android:id="@+id/fav7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="start"
+                    android:text="@string/Favoritesq7" />
+
+                <EditText
+                    android:id="@+id/Activityfield"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="start"
+                    android:hint="Gaming"
+                    android:focusable="true"
+                    android:inputType="text" />
+
+                <TextView
+                    android:id="@+id/fav8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="start"
+                    android:text="@string/Favoritesq8" />
+
+                <EditText
+                    android:id="@+id/Gamefield"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="start"
+                    android:hint="MLBB"
+                    android:focusable="true"
+                    android:inputType="text" />
+
+                <TextView
+                    android:id="@+id/fav9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="start"
+                    android:text="@string/Favoritesq9" />
+
+                <EditText
+                    android:id="@+id/Showsfield"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="start"
+                    android:hint="Sousou no Frieren"
+                    android:focusable="true"
+                    android:inputType="text" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/botbuttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topPanel"
+        app:layout_constraintVertical_bias="0.973">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/savebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="50dp"
+            android:paddingEnd="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/roundedbutton_wst"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/saveButton"
+            android:textColor="@color/StrawberryField"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/discardbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="36dp"
+            android:paddingEnd="36dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/roundedbutton_nst"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/discardButton"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
