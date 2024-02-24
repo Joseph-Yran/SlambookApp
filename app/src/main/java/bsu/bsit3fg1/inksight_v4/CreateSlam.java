@@ -1,6 +1,7 @@
 package bsu.bsit3fg1.inksight_v4;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 
 import android.app.DatePickerDialog;
 import android.content.Context;
@@ -19,7 +20,7 @@ public class CreateSlam extends AppCompatActivity {
     ImageButton home, back, settings;
     EditText bdayinp;
 
-    Button save, discard;
+    AppCompatButton save, discard;
 
     EditText namef, nickn, birthdate, igh, fbh, twh, oth, food, bev, ani, song, artist, celebrity, activity, game, show;
 
@@ -32,23 +33,13 @@ public class CreateSlam extends AppCompatActivity {
         setContentView(R.layout.activity_create_slam);
 
         myDB = new SQLiteDBHelper(context);
-        initialize();
-
-    }
-
-    private void clearAllFields() {
-        //edtID.setText("");
-        //edtName.setText("");
-        //edtUname.setText("");
-        //edtPassword.setText("");
-        //edtBirthday.setText("");
-        //edtAddress.setText("");
-    }
-
-    private void initialize() {
         home = (ImageButton) findViewById(R.id.homebttn);
         back = (ImageButton) findViewById(R.id.backbttn);
         settings = (ImageButton) findViewById(R.id.settingsbttn);
+
+        save = (AppCompatButton) findViewById(R.id.savebutton);
+        discard = (AppCompatButton) findViewById(R.id.discardbutton);
+
         bdayinp = findViewById(R.id.bdayfield);
         namef = findViewById(R.id.namefield);
         nickn = findViewById(R.id.nickfield);
@@ -102,7 +93,7 @@ public class CreateSlam extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //function ni discard goes here
-                clearAllFields();
+                //clearAllFields();
             }
         });
 
@@ -128,5 +119,15 @@ public class CreateSlam extends AppCompatActivity {
                 datePickerDialog.show();
             }
         });
+
     }
+
+    //private void clearAllFields() {
+        //edtID.setText("");
+        //edtName.setText("");
+        //edtUname.setText("");
+        //edtPassword.setText("");
+        //edtBirthday.setText("");
+        //edtAddress.setText("");
+    //}
 }
