@@ -50,6 +50,7 @@ public class Settings extends AppCompatActivity {
             public void onClick(View v) {
                 Intent nextScreen = new Intent(getApplicationContext(), Login.class);
                 startActivity(nextScreen);
+                finish();
             }
         });
     }

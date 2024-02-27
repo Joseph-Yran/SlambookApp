@@ -44,7 +44,7 @@ import java.util.ArrayList;
                     " FOREIGN KEY (`"+DB_Contract.Post.USER_ID+"`) REFERENCES " +
                     " `"+DB_Contract.User.USER_TABLE+"`(`"+DB_Contract.User.ID+"`)," +
                     " UNIQUE (`"+DB_Contract.Post.ID+"`) ON CONFLICT ABORT);";
-
+            //there will be things added here
             try {
                 db.execSQL(CREATE_USER_TABLE);
                 Toast.makeText(context, "Table User Created.", Toast.LENGTH_LONG).show();
@@ -58,6 +58,13 @@ import java.util.ArrayList;
             } catch (SQLException e) {
                 e.printStackTrace();
             }
+
+            /*try {
+                db.execSQL(CREATE_SLAM_TABLE);
+                Toast.makeText(context, "Table Slam Created.", Toast.LENGTH_LONG).show();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }*/
         }
 
         @Override
@@ -213,5 +220,7 @@ import java.util.ArrayList;
             String[] selectionArgs = {"1"}; // Assuming "ARCHIVED" is a column indicating whether a user is archived (1) or not (0)
             return db.query(DB_Contract.User.USER_TABLE, columns, selection, selectionArgs, null, null, null);
         }
+
+
 
     }

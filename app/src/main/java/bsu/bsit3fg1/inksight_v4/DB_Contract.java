@@ -23,4 +23,5 @@ public class DB_Contract {
         public static final String TEXT = "post_text";
         public static final String DATE = "post_date";
     }
+
 }

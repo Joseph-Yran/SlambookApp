@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_l"
-    tools:context=".PreviewSlam">
+    tools:context=".EditSlam">
 
     <ImageView
         android:id="@+id/imageView2"
@@ -19,14 +18,64 @@
     <LinearLayout
         android:id="@+id/topPanel"
         android:layout_width="match_parent"
-        android:layout_height="25dp"
+        android:layout_height="88dp"
         android:orientation="horizontal"
+        android:paddingStart="20dp"
+        android:paddingTop="20dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="5dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.051"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-    </LinearLayout>
 
+        <ImageButton
+            android:id="@+id/backbttn"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:contentDescription="BackButton"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/_14" />
+
+        <TextView
+            android:id="@+id/screenlbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/labelbackgrounds"
+            android:fontFamily="@font/poppins"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="@string/screenlabel_es"
+            android:textAlignment="center"
+            android:textColor="@color/SurfTheWeb"
+            android:textSize="25sp" />
+
+        <ImageButton
+            android:id="@+id/homebttn"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/buttonlabel_ho"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/home_1" />
+
+        <ImageButton
+            android:id="@+id/settingsbttn"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/buttonlabel_st"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/setting_1" />
+    </LinearLayout>
 
     <ScrollView
         android:id="@+id/scrollView2"
@@ -83,11 +132,13 @@
                     android:id="@+id/namefield"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:clickable="true"
                     android:fontFamily="@font/poppins"
                     android:gravity="start"
                     android:hint="Full Name"
-                    android:focusable="true"
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:longClickable="false"
+                    android:textIsSelectable="false"
                     android:inputType="textPersonName" />
 
                 <TextView
@@ -105,7 +156,10 @@
                     android:fontFamily="@font/poppins"
                     android:gravity="start"
                     android:hint="Nickname"
-                    android:focusable="true"
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:longClickable="false"
+                    android:textIsSelectable="false"
                     android:inputType="text" />
 
                 <TextView
@@ -120,11 +174,13 @@
                     android:id="@+id/bdayfield"
                     android:layout_width="match_parent"
                     android:layout_height="48dp"
-                    android:clickable="false"
                     android:cursorVisible="false"
                     android:ems="10"
+                    android:hint="Enter date"
                     android:focusable="false"
-                    android:hint="Enter date" />
+                    android:clickable="false"
+                    android:longClickable="false"
+                    android:textIsSelectable="false"/>
 
                 <TextView
                     android:id="@+id/abq4"
@@ -140,8 +196,11 @@
                     android:layout_height="48dp"
                     android:fontFamily="@font/poppins"
                     android:gravity="start"
-                    android:focusable="true"
-                    android:hint="Address" />
+                    android:hint="Address"
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:longClickable="false"
+                    android:textIsSelectable="false"/>
 
             </LinearLayout>
 
@@ -211,8 +270,9 @@
                     android:fontFamily="@font/poppins"
                     android:gravity="start"
                     android:hint="Social Media Profile Link"
-                    android:focusable="true"
-                    android:inputType="text" />
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:longClickable="false"/>
 
 
             </LinearLayout>
@@ -256,8 +316,10 @@
                     android:fontFamily="@font/poppins"
                     android:gravity="start"
                     android:hint="My favorites are the ff:"
-                    android:focusable="true"
-                    android:inputType="textMultiLine|textCapSentences"
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:longClickable="false"
+                    android:textIsSelectable="false"
                     android:scrollHorizontally="false" />
 
                 <TextView
@@ -275,8 +337,10 @@
                     android:fontFamily="@font/poppins"
                     android:gravity="start"
                     android:hint="Hobby 1, Hobby 2,..."
-                    android:focusable="true"
-                    android:inputType="textMultiLine|textCapSentences"
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:longClickable="false"
+                    android:textIsSelectable="false"
                     android:scrollHorizontally="false" />
 
             </LinearLayout>
@@ -320,8 +384,7 @@
                     android:fontFamily="@font/poppins"
                     android:gravity="start"
                     android:hint="ideas, thoughts, description, etc"
-                    android:focusable="false"
-                    android:clickable="false"
+                    android:focusable="true"
                     android:inputType="textMultiLine|textCapSentences"
                     android:scrollHorizontally="false" />
 
@@ -340,8 +403,7 @@
                     android:fontFamily="@font/poppins"
                     android:gravity="start"
                     android:hint="Your advice"
-                    android:focusable="false"
-                    android:clickable="false"
+                    android:focusable="true"
                     android:inputType="textMultiLine|textCapSentences"
                     android:scrollHorizontally="false" />
 
@@ -350,30 +412,46 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
-    <ImageButton
-        android:id="@+id/backbttn"
-        android:contentDescription="BackButton"
-        android:layout_width="60dp"
+    <LinearLayout
+        android:id="@+id/botbuttons"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@android:color/transparent"
-        android:scaleType="fitCenter"
-        app:srcCompat="@drawable/_14"
-        app:layout_constraintBottom_toBottomOf="@id/overlapview1"
-        app:layout_constraintEnd_toEndOf="@id/overlapview1"
-        app:layout_constraintHorizontal_bias="0.76"
-        app:layout_constraintStart_toStartOf="@id/overlapview1"
-        app:layout_constraintTop_toTopOf="@id/overlapview1"
-        app:layout_constraintVertical_bias="0.1"/>
-    <Space
-        android:id="@+id/overlapview1"
-        android:layout_width="1dp"
-        android:layout_height="1dp"
-        android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="@id/scrollView2"
-        app:layout_constraintEnd_toEndOf="@+id/scrollView2"
-        app:layout_constraintStart_toStartOf="@+id/scrollView2"
-        app:layout_constraintTop_toTopOf="@id/scrollView2"
-        app:layout_constraintHorizontal_bias=".1"
-        app:layout_constraintVertical_bias=".03" />
+        android:orientation="horizontal"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topPanel"
+        app:layout_constraintVertical_bias="0.973">
 
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/savebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="50dp"
+            android:paddingEnd="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/roundedbutton_wst"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/saveButton"
+            android:textColor="@color/StrawberryField"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/archivebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="36dp"
+            android:paddingEnd="36dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/roundedbutton_nst"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/archiveButton"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

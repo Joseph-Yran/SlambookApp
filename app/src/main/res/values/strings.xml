@@ -28,6 +28,7 @@
     <string name="screenlabel_fr">FRIENDS</string>
     <string name="screenlabel_ar">ARCHIVES</string>
     <string name="screenlabel_as">ADD SLAM</string>
+    <string name="screenlabel_es">EDIT SLAM</string>
     <string name="screenlabel_st">SETTINGS</string>
 
     <string name="buttonlabel_ho">Home</string>
@@ -51,17 +52,21 @@
     <string name="Aboutmeq1">My Name is:</string>
     <string name="Aboutmeq2">You can call me:</string>
     <string name="Aboutmeq3">My Birthday is:</string>
-    <string name="Aboutmeq4">This is me:</string>
+    <string name="Aboutmeq5">This is me:</string>
+    <string name="Aboutmeq4">I live in:</string>
 
     <string name="Onlinemeq0">Online Me:</string>
-    <string name="Onlinemeq1">My Instagram is:</string>
+    <!--<string name="Onlinemeq1">My Instagram is:</string>
     <string name="Onlinemeq2">My Twitter/X is:</string>
     <string name="Onlinemeq3">My Facebook is:</string>
-    <string name="Onlinemeq4">My other handle/s:</string>
+    <string name="Onlinemeq4">My other handle/s:</string>-->
+    <string name="Onlineme">My Social Media Link:</string>
 
 
     <string name="Favoritesq0">My Favorites:</string>
-    <string name="Favoritesq1">Food:</string>
+    <string name="Favoritesq">My Favorites are:</string>
+    <string name="Hobbies">My Hobbies are:</string>
+    <!--<string name="Favoritesq1">Food:</string>
     <string name="Favoritesq2">Beverage:</string>
     <string name="Favoritesq3">Animal:</string>
     <string name="Favoritesq4">Song/s:</string>
@@ -69,11 +74,15 @@
     <string name="Favoritesq5">Artist/s:</string>
     <string name="Favoritesq7">Activity:</string>
     <string name="Favoritesq8">Game/s:</string>
-    <string name="Favoritesq9">Show/s:</string>\
+    <string name="Favoritesq9">Show/s:</string>-->
+
+    <string name="Thoughts">Ideas About Me:</string>
+    <string name="Thoughtsonme">Any Thoughts about me?</string>
+    <string name="Adviceforme">Any Advice for me?</string>
 
     <string name="saveButton">Save</string>
     <string name="discardButton">Discard</string>
-
+    <string name="archiveButton">Archive</string>
 
     <!-- Arrays -->
     <string-array name="friend_name">

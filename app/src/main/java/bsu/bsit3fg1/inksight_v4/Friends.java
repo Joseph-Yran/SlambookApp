@@ -104,7 +104,8 @@ public class Friends extends AppCompatActivity implements FriendInterface{
 
     @Override
     public void onEditClick(int position) {
-        Toast.makeText(Friends.this, "Editing", Toast.LENGTH_SHORT).show();
+        Intent edit = new Intent(getApplicationContext(), EditSlam.class);
+        startActivity(edit);
     }
 
     @Override
